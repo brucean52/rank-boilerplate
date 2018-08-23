@@ -51,8 +51,8 @@ const cars = [
 
 const resolvers = {
     Query: {
-        findByMake(root, { make }){
-          const result = cars.filter(car => car.make === make);
+        findCar(root, { make, model, year }){
+          const result = cars.filter(car => car.make == make);
           return result
         },
         cars: () => cars

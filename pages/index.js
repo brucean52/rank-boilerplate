@@ -8,7 +8,7 @@ import Header from '../components/Header'
 export default () => (
   <App>
     <Header />
-    <Query query={GET_BOOKS}>
+    <Query query={GET_CARS}>
       {({ loading, error, data }) => {
         console.log('loading', loading)
         console.log('error', error)
@@ -16,10 +16,12 @@ export default () => (
         if (loading) return <p>Loading...</p>;
         if (error) return <p>Error :(</p>;
   
-        return data.books.map(( item ) => (
-          <div key={item.title}>
-            <h1 >{item.title}</h1>
-            <h4 >{item.author}</h4>
+        return data.cars.map(( car, index ) => (
+          <div key={index}>
+            <h1 >{car.make}</h1>
+            <h4 >{car.model}</h4>
+            <h4 >{car.type}</h4>
+            <h4 >{car.year}</h4>
           </div>
         ));
       }}
@@ -27,11 +29,13 @@ export default () => (
   </App>
 )
 
-const GET_BOOKS = gql`
+const GET_CARS = gql`
   {
-    books {
-      title
-      author
+    cars {
+      make
+      model
+      type
+      year
     }
   }
 `;

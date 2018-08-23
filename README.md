@@ -2,7 +2,7 @@
 
 🚀 **[TEST](https://test.com)**
 
-A lean, simple boiler plate that uses next generation web development technology to build Isomorphic/Universal Web Apps. This project assumes basic functionality of React, Apollo GraphQL, Next.js, and Koa.
+A lean, simple boiler plate that uses next generation web development technology to build Isomorphic/Universal Web Apps. This boilerplate assumes basic knowledge of React, Apollo GraphQL, Next.js, and Koa.
 
 Designed to efficiently implement the following technologies:
 - Apollo Client v2.4.x
