@@ -21,7 +21,7 @@ Designed to efficiently implement the following technologies:
 
 `npm run dev`
 
-##Resources
+## Resources
 
 These are these are the resources I found the most helpful.
 
