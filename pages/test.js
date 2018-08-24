@@ -1,15 +1,11 @@
 import App from '../components/App'
+import Header from '../components/Header'
 
 export default () => (
   <div className="wrapper">
     <App>
-      <div className="header">
-      
-      </div>
+      <Header/>
       <div className="container">
-      
-      </div>
-      <div className="footer">
       
       </div>
     </App>
@@ -33,24 +29,15 @@ export default () => (
 
       // Extra large devices (large desktops, 1200px and up)
       @media (min-width: 1200px) { 
-        .wrapper {
-          margin: 0;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr); 
-          grid-template-rows: 100px 75vmin 200px; 
-        }
-
-        .header {
-          grid-column: span 12;
-          border: solid 1px red;
-        }
+        // .wrapper {
+        //   margin: 0;
+        //   display: grid;
+        //   grid-template-columns: repeat(3, 1fr); 
+        //   grid-template-rows: 100px 75vmin 200px; 
+        // }
         .container {
           grid-column: span 12;
           border: solid 1px blue;
-        }
-        .footer {
-          grid-column: span 12;
-          border: solid 1px green;
         }
       }
     `}</style>
