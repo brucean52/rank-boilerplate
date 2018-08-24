@@ -17,6 +17,10 @@ export default ({ children }) => (
         margin: 0;
         padding: 0;
       }
+      .container {
+        width: 90%;
+        margin: auto;
+      }
     `}</style>
   </main>
 )

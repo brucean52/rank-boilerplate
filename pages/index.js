@@ -4,6 +4,7 @@ import gql from "graphql-tag"
 
 import App from '../components/App'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default () => (
   <App>
@@ -26,6 +27,7 @@ export default () => (
         ));
       }}
     </Query>
+    <Footer/>
   </App>
 )
 
