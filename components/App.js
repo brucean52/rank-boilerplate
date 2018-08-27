@@ -18,7 +18,7 @@ export default ({ children }) => (
         padding: 0;
       }
       .container {
-        width: 90%;
+        width: 80%;
         margin: auto;
       }
     `}</style>
