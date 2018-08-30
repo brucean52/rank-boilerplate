@@ -2,8 +2,7 @@ const { gql } = require('apollo-server-koa');
 
 const typeDefs = gql`
     type Query {
-      cars: [Car],
-      findCar(make: String, model: String, year: Int): Car
+      cars: [Car]
     }
     type Car { 
       make: String, 
